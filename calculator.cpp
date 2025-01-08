@@ -1,31 +1,27 @@
-#include <iostream>
 #include "calculator.h"
+#include <iostream>
+using namespace std;
 
-// Add two numbers
-float add(float a, float b)
-{
+// Function to add two numbers
+double add(double a, double b) {
     return a + b;
 }
 
-// Subtract two numbers
-float subtract(float a, float b)
-{
+// Function to subtract two numbers
+double subtract(double a, double b) {
     return a - b;
 }
 
-// Multiply two numbers
-float multiply(float a, float b)
-{
+// Function to multiply two numbers
+double multiply(double a, double b) {
     return a * b;
 }
 
-// Divide two numbers
-float divide(float a, float b)
-{
-    if (b == 0)
-    {
-        std::cout << "Error: Division by zero!" << std::endl;
-        return 0; // Return 0 in case of division by zero
+// Function to divide two numbers
+double divide(double a, double b) {
+    if (b == 0) {
+        cout << "Error! Division by zero." << endl;
+        return 0;  // Handle division by zero error
     }
     return a / b;
 }
